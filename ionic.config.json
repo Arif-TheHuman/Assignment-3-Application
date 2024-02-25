@@ -1,0 +1,7 @@
+{
+  "name": "3Pages",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
