@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +8,198 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Alert and Notifications</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-content>
+
+    <!-- Existing content here -->
+  
+    <ion-app>
+      <ion-menu contentId="main-content" >
+        <ion-header>
+          <ion-toolbar color="tertiary">
+            <ion-title>Menu Content</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding"><a href="tabs/tab1">Alert and Notifications<br><br></a>
+          <a href="tabs/tab2">Settings<br><br></a>
+          <a href="tabs/tab3">Dashboard</a>
+      </ion-content>
+      </ion-menu>
+      
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons class="large-menu-button" slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title style="font-size: 40px" class="darkgreenText text-3xl font-bold align-center font-kalam">Alert and Notifications</ion-title>
+            <ion-buttons slot="end">
+              <a [routerLink]="['/tabs/tab2']">
+                <ion-avatar>
+                  <img src="../../assets/images/syamimi gambar faris.jpg">
+                </ion-avatar>
+              </a>
+            </ion-buttons>
+          </ion-toolbar>
+          <hr>
+
+          <ion-content class="my-background" [fullscreen]="true">
+            
+            <!-- monkey card -->
+        <ion-card class="lightgreenbg green-border1">
+          <ion-card-header>
+            <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Animals have been<br>
+            detected in your area
+            </p>
+          </ion-card-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">07:42am</p>
+                <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">01/04/2024</p>
+                <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 1</p>
+              </ion-col>
+              <ion-col>
+                <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/monkey.jpeg">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+
+<!-- aphid card -->
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Animals have been<br>
+    detected in your area
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">08:01am</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">31/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 2</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/aphids.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<!-- caterpillar card -->
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Animals have been<br>
+    detected in your area
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">13:13pm</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">31/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 2</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/caterpillar.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<!-- snailcard -->
+
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">16:30pm</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">30/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 2</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/snail.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<!-- komodocard -->
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">14:15pm</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">01/04/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 1</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/komodo.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<!-- mouse card -->
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">17:33pm</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">28/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 3</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/rat.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+
+<!-- bat card -->
+<ion-card class="lightgreenbg green-border1">
+  <ion-card-header>
+    <p style="font-size: 35px;" class="black align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    </p>
+  </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">20:36pm</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">26/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="black margleft1 font-bold">Sensor 3</p>
+      </ion-col>
+      <ion-col>
+        <img style="border-radius: 10%;" class="Alertimg margleft" src="../../assets/images/bat.jpg">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+      </ion-content>
+      </ion-header>
+      <ion-content class="ion-padding"></ion-content>
+    </div>
+  </ion-app>
+  </ion-content>
+
 </ion-content>
+
+
