@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  emailChecked = false;
+  alarmChecked = false;
+  pushNotiChecked = false;
+  SMSChecked = false;
+  callChecked = false;
 
-  constructor() {}
-
+  // ...
 }

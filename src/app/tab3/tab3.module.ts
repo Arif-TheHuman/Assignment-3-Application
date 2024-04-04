@@ -4,8 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
+import { RouterModule } from '@angular/router';
 import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { ColorPickerModule } from 'ngx-color-picker';
+
 
 @NgModule({
   imports: [
@@ -13,7 +15,9 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab3PageRoutingModule
+    Tab3PageRoutingModule,
+    RouterModule.forChild([{ path: '', component: Tab3Page }]),
+    ColorPickerModule
   ],
   declarations: [Tab3Page]
 })
