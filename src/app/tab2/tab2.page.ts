@@ -8,9 +8,13 @@ import { Component } from '@angular/core';
 export class Tab2Page {
   emailChecked = false;
   alarmChecked = false;
-  pushNotiChecked = false;
-  SMSChecked = false;
-  callChecked = false;
+  pushNotiChecked = true;
+  SMSChecked = true;
+  callChecked = true;
+  todDetection = true;
+  sensorNO = true;
+  Date = true;
+  picture = true;
 
   // ...
 }
