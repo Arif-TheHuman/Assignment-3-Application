@@ -1,17 +1,144 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <!-- Existing content here -->
+  
+    <ion-app>
+      <!-- This one is for the menu inside after clicking on the menu button -->
+      <ion-menu contentId="main-content" >
+        <ion-header color="tertiary" >
+          <ion-toolbar color="tertiary">
+            <ion-title style="font-size: 40px;">Menu Content</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content style="font-size: 25px;" class="ion-padding"><a href="tabs/tab1"><br>Alert and Notifications<br><br></a>
+          <a href="tabs/tab2">Settings<br><br></a>
+          <a href="tabs/tab3">Dashboard</a>
+      </ion-content>
+      </ion-menu>
+      
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar color="primary">
+            <ion-buttons class="large-menu-button" slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title  style="font-size: 2em" class="darkgreen text-3xl font-bold align-center font-kalam">Settings</ion-title>
+            <ion-buttons slot="end">
+              <a [routerLink]="['/tabs/tab2']">
+                <ion-avatar>
+                  <img src="../../assets/images/syamimi gambar faris.jpg">
+                </ion-avatar>
+              </a>
+            </ion-buttons>
+          </ion-toolbar>
+          <hr>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+          <ion-content class="my-background" [fullscreen]="true">
+          
+            <ion-card color="tertiary" style="border-radius: 1%;" class="green-border1">
+
+              <h2 class="cream font-kalam font-bold move-right">Sensitivity Levels </h2>
+              <p style="font-size: 21px;" class="font-bold red text-above move-right5" >By Size</p>
+
+              <div class="slider-container">
+                <input type="range" min="1" max="100" value="55" class="slider">
+                <div class="text-below">
+                  <span style="font-size: 21px;" class="font-bold cream">Caterpiller</span>
+                  <span style="font-size: 21px;" class="font-bold cream">Snake</span>
+                  <span style="font-size: 21px;" class="font-bold cream">Human</span>
+                </div>
+              </div>
+        
+
+          <hr class="margin-top">
+
+          <h2 class="cream font-kalam font-bold move-right">Quiet Hours<br></h2>
+          <ion-input class="cream-border1" line="none" style="font-size: 18px;" label="Select time" label-placement="floating" fill="solid" placeholder="eg. 10:00pm - 4:00am"></ion-input>
+          <br>
+          <hr>
+
+          <h2 class="cream font-kalam font-bold move-right">Notification Methods<br></h2>
+          <div style="border-radius: 10%;" class="checkbox-container">
+            <ion-item class="cream-border1" line="none" >
+              <ion-label class="font-bold" [ngStyle]="{'color': emailChecked ? 'green' : 'red'}">Email</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="emailChecked"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': alarmChecked ? 'green' : 'red'}">Alarm</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="alarmChecked"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': pushNotiChecked ? 'green' : 'red'}">Push Notifications</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="pushNotiChecked"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': SMSChecked ? 'green' : 'red'}">SMS</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="SMSChecked"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': callChecked ? 'green' : 'red'}">Call</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="callChecked"></ion-checkbox>
+            </ion-item>
+          </div>
+          <br>
+          <hr>
+
+          <h2 class="cream font-kalam font-bold move-right">Customized messages<br></h2>
+          <div style="border-radius: 10%;" class="checkbox-container">
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': todDetection ? 'green' : 'red'}">Time of detection</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="todDetection"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': sensorNO ? 'green' : 'red'}">Sensor Number</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="sensorNO"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': Date ? 'green' : 'red'}">Date</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="Date"></ion-checkbox>
+            </ion-item>
+
+            <ion-item class="cream-border1" line="none">
+              <ion-label class="font-bold" [ngStyle]="{'color': picture ? 'green' : 'red'}">Picture</ion-label>
+              <ion-checkbox slot="end" [(ngModel)]="picture"></ion-checkbox>
+            </ion-item>
+          </div>
+          
+          <hr>
+
+          <h2 class="cream font-kalam font-bold move-right">Alert Message<br></h2>
+          <ion-input class="cream-border1" line="none" style="font-size: 18px;" label="Enter your prefered alert message" label-placement="floating" fill="solid" placeholder="e.g. Hoho bisai bisai ada binatang woiii"></ion-input>
+          <br>
+
+          <hr>
+
+          <h2 class="cream font-kalam font-bold move-right">Switch User<br></h2>
+          <div class="box-container cream1">
+            <div class="user-box text-size red">
+            Kaito(User)
+            </div>
+          </div>
+
+          <hr>
+
+          <h2 class="cream font-kalam font-bold move-right">Language Preferences<br></h2>
+          <div class="box-container cream1">
+            <div class="user-box text-size green">
+            English
+            </div>
+          </div>
+
+        </ion-card>
+        </ion-content>
+      </ion-header>
+      <!-- <ion-content class="ion-padding"></ion-content> -->
+    </div>
+  </ion-app>
 </ion-content>
