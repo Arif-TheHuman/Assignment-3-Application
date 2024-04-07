@@ -65,6 +65,9 @@
 
         <ion-content class="my-background1" [fullscreen]="true">
 
+          <ion-grid>
+            <ion-row>
+              <ion-col>
           <!-- Post card -->
           <a [routerLink]="['/tabs/community-eg']">
           <div class="cream-border2 post-rectangle">
@@ -73,10 +76,14 @@
         </a>
           <br>
           <br>
+      </ion-col>
+        </ion-row>
+        </ion-grid>
+
+
+        <p style="font-weight: bold;font-size: 30px;" class="font-kalam">Most Recent Post</p> 
 
           <!-- chayone card -->
-          <br>
-          <br>
         <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
           
           <ion-grid>
