@@ -1,62 +1,85 @@
-<app-explore-container name="Tab 1 page"></app-explore-container>
+<!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 
   <ion-content>
 
     <!-- Existing content here -->
-  
-    <ion-app>
 
+    <ion-app>
       <!-- This one is for the menu inside after clicking on the menu button -->
-      <ion-menu contentId="main-content" >
+      <ion-menu  contentId="main-content"> <!-- this shows the physical look of the menu button -->
         <ion-header color="tertiary" >
           <ion-toolbar color="tertiary">
             <ion-title style="font-size: 40px;">Menu Content</ion-title>
           </ion-toolbar>
         </ion-header>
-        <ion-content style="font-size: 25px;" class="ion-padding"><a href="tabs/tab1"><br>Alert and Notifications<br><br></a>
-          <a href="tabs/tab2">Settings<br><br></a>
-          <a href="tabs/tab3">Dashboard</a>
+        <ion-content color="tertiary" style="font-size: 25px;" class="ion-padding" >
+          <br>
+          <hr>
+          <span><ion-icon name="notifications-outline">  </ion-icon>
+          <a class="darkgreenText" href="tabs/tab1">  Alert and Notifications</a>
+        </span>
+        <hr>
+        <span>
+        <ion-icon name="settings-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/tab2">  Settings</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="person-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/tab3">  Profile</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="clipboard-outline"></ion-icon>        
+          <a class="darkgreenText" href="tabs/alert-history">  Alert History</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="people-outline"></ion-icon>        
+          <a class="darkgreenText" href="tabs/community">  Community</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="information-circle-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/aboutus">  About Us</a>
+        </span>
+        <hr>
       </ion-content>
       </ion-menu>
-      
-      <!-- This one is for the header of the page -->
-      <div class="ion-page" id="main-content">
-        <ion-header>
-          <ion-toolbar color="primary"> <!--color of the menu button-->
-            <ion-buttons class="large-menu-button"slot="start">
-              <ion-menu-button></ion-menu-button>
-            </ion-buttons>
-            <ion-title  style="font-size: 2em" class="darkgreen text-3xl font-bold align-center font-kalam">Alert and Notifications</ion-title>
-            
-            <ion-buttons slot="end">
-
-              <a [routerLink]="['/tabs/tab2']">
-                <ion-avatar>
-                  <img src="../../assets/images/syamimi gambar faris.jpg">
-                </ion-avatar>
-              </a>
-
-            </ion-buttons>
-            
-          </ion-toolbar>
+        
+        <div class="ion-page" id="main-content">
+          <ion-header>
+            <ion-toolbar color="tertiary ">
+              <ion-buttons class="large-menu-button" slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title  style="font-size: 2em" class="darkgreenText text-3xl font-bold align-center font-kalam">Alert and Notifications</ion-title>
+              <ion-buttons slot="end">
+                <a [routerLink]="['/tabs/tab3']">
+                  <ion-avatar class="toppic">
+                    <img src="../../assets/images/syamimi gambar faris.jpg">
+                  </ion-avatar>
+                </a>
+              </ion-buttons>
+            </ion-toolbar>
           <hr>
-
-          <ion-content class="my-background" [fullscreen]="true">
-            
+<!-- this is the background picture of the page -->
+          <ion-content class="my-background1" [fullscreen]="true">
             <br>
+            
             <!-- monkey card -->
         <ion-card color="tertiary" style="border-radius: 10%;" class="green-border1">
           <ion-card-header>
-            <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Animals have been
+            <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Animals have been
             detected in your area
             </p>
           </ion-card-header>
           <ion-grid>
             <ion-row>
               <ion-col>
-                <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">07:42am</p>
-                <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">01/04/2024</p>
-                <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 1</p>
+                <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">07:42am</p>
+                <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">01/04/2024</p>
+                <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 1</p>
               </ion-col>
               <ion-col>
                 <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/monkey.jpeg">
@@ -70,16 +93,16 @@
 <!-- aphid card -->
 <ion-card color="tertiary" style="border-radius: 10%;" class="green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Animals have been
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Animals have been
     detected in your area
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">08:01am</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">31/03/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 2</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">08:01am</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">31/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 2</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/aphids.jpg">
@@ -93,16 +116,16 @@
 <!-- caterpillar card -->
 <ion-card color="tertiary" style="border-radius: 10%;" class="lightgreenbg green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Animals have been
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Animals have been
     detected in your area
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">13:13pm</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">31/03/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 2</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">13:13pm</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">31/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 2</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/caterpillar.jpg">
@@ -117,15 +140,15 @@
 
 <ion-card color="tertiary" style="border-radius: 10%;" class="lightgreenbg green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">16:30pm</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">30/03/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 2</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">16:30pm</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">30/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 2</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/snail.jpg">
@@ -140,15 +163,15 @@
 <!-- komodocard -->
 <ion-card color="tertiary" style="border-radius: 10%;" class="lightgreenbg green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">14:15pm</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">01/04/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 1</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">14:15pm</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">01/04/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 1</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/komodo.jpg">
@@ -163,15 +186,15 @@
 <!-- mouse card -->
 <ion-card color="tertiary" style="border-radius: 10%;" class="lightgreenbg green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">17:33pm</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">28/03/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 3</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">17:33pm</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">28/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 3</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/rat.jpg">
@@ -186,15 +209,15 @@
 <!-- bat card -->
 <ion-card color="tertiary" style="border-radius: 10%;" class="lightgreenbg green-border1">
   <ion-card-header>
-    <p style="font-size: 35px;" class="green align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
+    <p style="font-size: 35px;" class="darkgreenText align-center font-bold font-italic ">Hoho bisai bisai ada binatang woiii
     </p>
   </ion-card-header>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">20:36pm</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">26/03/2024</p>
-        <p style="text-align: left; font-size: 25px;" class="green margleft1 font-bold">Sensor 3</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">20:36pm</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">26/03/2024</p>
+        <p style="text-align: left; font-size: 25px;" class="darkgreenText margleft1 font-bold">Sensor 3</p>
       </ion-col>
       <ion-col>
         <img style="border-radius: 10%;" class="Alertimg margintop margleft" src="../../assets/images/bat.jpg">
