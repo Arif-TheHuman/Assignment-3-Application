@@ -18,6 +18,18 @@ const routes: Routes = [
     path: 'community',
     loadChildren: () => import('./community/community.module').then( m => m.CommunityPageModule)
   },
+  {
+    path: 'community-eg',
+    loadChildren: () => import('./community-eg/community-eg.module').then( m => m.CommunityEgPageModule)
+  },
+  {
+    path: 'community-eg-post',
+    loadChildren: () => import('./community-eg-post/community-eg-post.module').then( m => m.CommunityEgPostPageModule)
+  },
+  {
+    path: 'community-update',
+    loadChildren: () => import('./community-update/community-update.module').then( m => m.CommunityUpdatePageModule)
+  },
   
 ];
 @NgModule({
