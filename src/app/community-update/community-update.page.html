@@ -1,0 +1,213 @@
+<ion-content>
+
+  <!-- Existing content here -->
+
+  <ion-app>
+    <!-- This one is for the menu inside after clicking on the menu button -->
+    <ion-menu  contentId="main-content"> <!-- this shows the physical look of the menu button -->
+      <ion-header color="tertiary" >
+        <ion-toolbar color="tertiary">
+          <ion-title style="font-size: 40px;">Menu Content</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="tertiary" style="font-size: 25px;" class="ion-padding" >
+        <br>
+        <hr>
+        <span><ion-icon name="notifications-outline">  </ion-icon>
+        <a class="darkgreenText" href="tabs/tab1">  Alert and Notifications</a>
+      </span>
+      <hr>
+      <span>
+      <ion-icon name="settings-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/tab2">  Settings</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="person-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/tab3">  Profile</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="clipboard-outline"></ion-icon>        
+        <a class="darkgreenText" href="tabs/alert-history">  Alert History</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="people-outline"></ion-icon>        
+        <a class="darkgreenText" href="tabs/community">  Community</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="information-circle-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/aboutus">  About Us</a>
+      </span>
+      <hr>
+    </ion-content>
+    </ion-menu>
+    
+    
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+          <ion-buttons class="large-menu-button" slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title  style="font-size: 2em" class=" text-3xl font-bold align-center font-kalam">Community</ion-title>
+          <ion-buttons slot="end">
+            <a [routerLink]="['/tabs/tab3']">
+              <ion-avatar class="toppic">
+                <img src="../../assets/images/syamimi gambar faris.jpg">
+              </ion-avatar>
+            </a>
+          </ion-buttons>
+        </ion-toolbar>
+        <hr>
+
+        <ion-content class="my-background1" [fullscreen]="true">
+
+          <!-- Post card -->
+          <a [routerLink]="['/tabs/community-update']">
+          <div class="cream-border2 post-rectangle">
+           <p style="font-weight: bold;" class="font-kalam">Post</p> 
+          </div>
+        </a>
+        <br>
+          <br>
+          
+
+          <p style="font-weight: bold;font-size: 30px;" class="font-kalam">Most Recent Post</p> 
+
+        <!-- Cocodile card -->
+        
+        <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/syamimi gambar faris.jpg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px;" class="darkgreenText font-bold font-kalam">Kaiya</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/cocodile.jpeg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: Bisai bisai ada buaya didaerah Kuala Belait di kawasan Simpang 7 Kampung Mumong patang ani. Pukul  2:29 patang. Bisai bisai semua.</p>
+            </ion-row>
+          </ion-grid>  
+        </ion-card>
+          <br>
+
+          <!-- chayone card -->
+          <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/chayone.jpg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px;" class="darkgreenText font-bold font-kalam">Chayone</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/whitebird.png">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: I found one of the cutest animal I've ever seen guysss. Does anyone know what animal this is? I want to keep it as a pet</p>
+            </ion-row>
+          </ion-grid>  
+        </ion-card>
+          <br>
+
+          <!-- Siiiuuu card -->
+          <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/ronaldo.png">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px;" class="darkgreenText font-bold font-kalam">SIIIUUU</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/mongoose.jpg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: Hello everyone i fortunately came across this animal near the where I'm staying. I'm curious what kind of animal this is can someone tell me what it is?</p>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+          <br>
+
+          <!-- massy card -->
+          <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/massy.jpeg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px ;" class="darkgreenText font-bold font-kalam">massy</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/blackmamba.jpeg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: Becareful people i happen to come across a dangerous poisonous black snake in argentina near the outside of my house at buenos Aires.</p>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+          <br>
+
+          <!-- honey card -->
+          <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/honey.jpeg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px ;" class="darkgreenText font-bold font-kalam">honey</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/wasps.jpeg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: Becareful there is killer wasps or something near the supermarket in korea. Please be aware bunnies </p>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+          <br>
+
+          <!-- Ya habibi card -->
+          <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/habibi.jpeg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px ;" class="darkgreenText font-bold font-kalam">Ya habibi</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/leopard.jpeg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: Please be aware near mosul in arab. I happen to see a leaopard roaming around where i lived. Be aware of your surrounding please.</p>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+          <br>
+
+
+            
+
+
+</ion-content>
+      </ion-header>
+     
+    </div>
+  </ion-app>
+</ion-content>
