@@ -1,0 +1,81 @@
+<ion-content>
+
+  <!-- Existing content here -->
+
+  <ion-app>
+    <!-- This one is for the menu inside after clicking on the menu button -->
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+
+          <a [routerLink]="['/tabs/community']">
+          <ion-buttons slot="start">
+            <ion-icon class="icons" name="arrow-back-circle-outline"></ion-icon>
+          </ion-buttons>
+          </a>
+
+          <ion-title  style="font-size: 2em" class=" text-3xl font-bold align-center font-kalam">Community</ion-title>
+          <ion-buttons slot="end">
+            <a [routerLink]="['/tabs/tab3']">
+              <ion-avatar class="toppic">
+                <img src="../../assets/images/syamimi gambar faris.jpg">
+              </ion-avatar>
+            </a>
+          </ion-buttons>
+        </ion-toolbar>
+        <hr>
+
+        <ion-content class="my-background1" [fullscreen]="true">
+
+
+        <ion-card color="tertiary" style="border-radius: 10%;" class="opacity cream-border1">
+
+
+          <!-- Post card -->
+          <br>
+          <ion-grid>
+            <ion-row>
+            <ion-col>
+          <p style="font-weight: bold; font-size: 30px; margin-top: 20px;" class="font-kalam">Creating Post</p> 
+
+      </ion-col>
+        <div class="cream-border2 post-rectangle">
+         <p style="font-weight: bold;" class="font-kalam">Send</p> 
+        </div>
+            </ion-row>
+            </ion-grid>
+
+          <!-- chayone card -->        
+          <ion-card color="tertiary" style="border-radius: 10%;" class="fullcard cream-border1">
+          
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-avatar style="" class="toppic1 align-center">
+                  <img src="../../assets/images/syamimi gambar faris.jpg">
+                </ion-avatar>
+              </ion-col>
+              <p style="font-size: 30px; margin-right: 100px;" class="darkgreenText font-bold font-kalam">Kaiya</p>
+              <ion-col>
+                
+              </ion-col>
+              <img style="border-radius: 10%;" class="Alertimg margleft cream-border2" src="../../assets/images/insertimg.jpeg">
+              <p style="font-size: 20px; margin-left: 20px;" class="darkgreenText font-bold font-kalam">Comments: .............</p>
+            </ion-row>
+          </ion-grid>  
+        </ion-card>
+          <br>
+        </ion-card>
+
+        <a [routerLink]="['/tabs/community-eg-post']">
+          <div class="align-center cream-border2 post-rectangle1">
+           <p style="font-weight: bold;" class="font-kalam">Example</p> 
+          </div>
+        </a>
+
+</ion-content>
+      </ion-header>
+     
+    </div>
+  </ion-app>
+</ion-content>
