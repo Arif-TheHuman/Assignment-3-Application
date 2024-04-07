@@ -1,5 +1,6 @@
 ion-card {
     --color: green;
+    opacity: 80%;
   }
   
 //   ion-card-title {
@@ -54,7 +55,7 @@ ion-card {
   }
 
   .user-box {
-    background-color: #fffdd0;
+    background-color: white;
     border: 1px solid black; /* Adjust as needed */
     padding: 10px; /* Adjust as needed */
     margin: 10px 0; /* Adjust as needed */
@@ -67,16 +68,6 @@ ion-card {
  .font-timesnewroman{
     font-family: 'Times New Roman', Times, serif;
 font-size: 2em;}
-
-hr {
-    border: none;
-    border-top: 2px solid #333; /* Line color */
-    color: #333; /* Line color */
-    overflow: visible;
-    text-align: center;
-    height: 1px;
-    width: 100%; /* Line width */
-  }
 
   .slider {
     -webkit-appearance: none; /* Override default appearance */
@@ -148,41 +139,22 @@ hr {
   .pink {
     color: #ff00ff;
   }
-  ion-menu::part(backdrop) {
-    background-color: rgba(255, 0, 255, 0.5);
-  }
-  
-  ion-menu::part(container) {
-    border-radius: 0 20px 20px 0;
-  
-    box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
-  }
 
   .align-center {
     text-align: center;
   }
 
-  ion-menu::part(backdrop) {
-    background-color: rgba(255, 0, 255, 0.5);
-  }
-
   .font-beautiful{
     font-family: 'Brush Script MT', cursive;
   }
-  ion-item, ion-input {
-    --ion-background-color:#fffdd0 ; /* This is a cream color */
-}
+//   ion-item, ion-input {
+//     --ion-background-color:#fffdd0 ; /* This is a cream color */
+// }
 
 
 
   .font-size1{
     font-size: 50px;
-  }
-  
-  ion-menu::part(container) {
-    border-radius: 0 20px 20px 0;
-  
-    box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
   }
 
   .cream{
@@ -193,9 +165,9 @@ hr {
     --background: #fffdd0;
   }
 
-  .cream-border1 {
-    border: 5px solid #fffdd0;
-  }
+  // .cream-border1 {
+  //   border: 5px solid #fffdd0;
+  // }
 
   .move-right {
     padding-left: 50px; /* Adjust as needed */
@@ -250,23 +222,6 @@ hr {
     margin-right: 15px;
   }
 
-  
-  
-  // ion-card-title {
-  //   --color: #07300e;
-  // }
-  
-//   ion-card-subtitle {
-//     --color: #d1fff8;
-//   }
-
-// .white{
-//   color: white;
-// }
-
-// .whitebackground{
-//   background-color: white;
-// }
 .large-menu-button ion-menu-button {
   --width: 300px; /* Adjust this value to your desired width */
   --height: 300px; /* Adjust this value to your desired height */
@@ -277,7 +232,7 @@ hr {
 }
 
 .darkgreenText{
-  --color: #07300e;
+  color: #07300e;
 }
 .darkgreenbg{
   --background: #07300e;
@@ -314,16 +269,6 @@ hr {
   font-family: 'Times New Roman', Times, serif;
 font-size: 2em;}
 
-hr {
-  border: none;
-  border-top: 2px solid #fffdd0; /* Line color */
-  color: #fffdd0; /* Line color */
-  overflow: visible;
-  text-align: center;
-  height: 1px;
-  width: 100%; /* Line width */
-}
-
 .font-beautiful{
   font-family: 'Brush Script MT', cursive;
 }
@@ -339,6 +284,8 @@ hr {
 .font-size2{
   font-size: 2em;
 }
+
+
 
 .orange{
   color: orange;
@@ -376,32 +323,40 @@ hr {
   .pink {
     color: #ff00ff;
   }
+
   ion-menu::part(backdrop) {
-    background-color: rgba(255, 0, 255, 0.5);
+    background-color: #8abb86(255, 0, 255, 0.5);
   }
   
   ion-menu::part(container) {
     border-radius: 0 20px 20px 0;
   
-    box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
+    box-shadow: 4px 0px 16px rgb(7, 48, 14);
+  }
+
+  ion-menu::part(backdrop) {
+    background-color: #8abb86(255, 0, 255, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgb(7, 48, 14);
   }
 
   .align-center {
     text-align: center;
   }
-
-  ion-menu::part(backdrop) {
-    background-color: rgba(255, 0, 255, 0.5);
-  }
-  
-  ion-menu::part(container) {
-    border-radius: 0 20px 20px 0;
-  
-    box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
-  }
+  .my-background2 {
+  --background: url('../../assets/images/bgpic2.png') no-repeat center center / cover;
+}
 
   .my-background {
     --background: url('../../assets/images/background.png') no-repeat center center / cover;
+}
+
+.my-background1 {
+  --background: url('../../assets/images/wallppr.png') no-repeat center center / cover;
 }
 
   .bottom-right-arrow {
@@ -428,8 +383,8 @@ hr {
 
   hr {
     border: none;
-    border-top: 2px solid #333; /* Line color */
-    color: #333; /* Line color */
+    border-top: 2px solid white; /* Line color */
+    color: white; /* Line color */
     overflow: visible;
     text-align: center;
     height: 1px;

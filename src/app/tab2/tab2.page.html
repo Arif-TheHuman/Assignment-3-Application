@@ -5,28 +5,57 @@
   
     <ion-app>
       <!-- This one is for the menu inside after clicking on the menu button -->
-      <ion-menu contentId="main-content" >
+      <ion-menu  contentId="main-content"> <!-- this shows the physical look of the menu button -->
         <ion-header color="tertiary" >
           <ion-toolbar color="tertiary">
             <ion-title style="font-size: 40px;">Menu Content</ion-title>
           </ion-toolbar>
         </ion-header>
-        <ion-content style="font-size: 25px;" class="ion-padding"><a href="tabs/tab1"><br>Alert and Notifications<br><br></a>
-          <a href="tabs/tab2">Settings<br><br></a>
-          <a href="tabs/tab3">Dashboard</a>
+        <ion-content color="tertiary" style="font-size: 25px;" class="ion-padding" >
+          <br>
+          <hr>
+          <span><ion-icon name="notifications-outline">  </ion-icon>
+          <a class="darkgreenText" href="tabs/tab1">  Alert and Notifications</a>
+        </span>
+        <hr>
+        <span>
+        <ion-icon name="settings-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/tab2">  Settings</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="person-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/tab3">  Profile</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="clipboard-outline"></ion-icon>        
+          <a class="darkgreenText" href="tabs/alert-history">  Alert History</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="people-outline"></ion-icon>        
+          <a class="darkgreenText" href="tabs/community">  Community</a>
+        </span>
+        <hr>
+        <span>
+          <ion-icon name="information-circle-outline">  </ion-icon>      
+          <a class="darkgreenText" href="tabs/aboutus">  About Us</a>
+        </span>
+        <hr>
       </ion-content>
       </ion-menu>
       
       <div class="ion-page" id="main-content">
         <ion-header>
-          <ion-toolbar color="primary">
+          <ion-toolbar color="tertiary ">
             <ion-buttons class="large-menu-button" slot="start">
               <ion-menu-button></ion-menu-button>
             </ion-buttons>
-            <ion-title  style="font-size: 2em" class="darkgreen text-3xl font-bold align-center font-kalam">Settings</ion-title>
+            <ion-title  style="font-size: 2em" class=" text-3xl font-bold align-center font-kalam">Settings</ion-title>
             <ion-buttons slot="end">
-              <a [routerLink]="['/tabs/tab2']">
-                <ion-avatar>
+              <a [routerLink]="['/tabs/tab3']">
+                <ion-avatar class="toppic">
                   <img src="../../assets/images/syamimi gambar faris.jpg">
                 </ion-avatar>
               </a>
@@ -34,19 +63,19 @@
           </ion-toolbar>
           <hr>
 
-          <ion-content class="my-background" [fullscreen]="true">
+          <ion-content class="my-background1" [fullscreen]="true">
           
-            <ion-card color="tertiary" style="border-radius: 1%;" class="green-border1">
+            <ion-card color="tertiary" style="border-radius: 1%;" class="cream-border1">
 
-              <h2 class="cream font-kalam font-bold move-right">Sensitivity Levels </h2>
-              <p style="font-size: 21px;" class="font-bold red text-above move-right5" >By Size</p>
+              <h2 class="cream font-kalam font-bold move-right">Sensitivity Levels</h2>
+              <p style="font-size: 21px;" class="font-bold red text-above move-right5">By Size</p>
 
               <div class="slider-container">
-                <input type="range" min="1" max="100" value="55" class="slider">
+                <input type="range" min="1" max="100" value="1" class="slider">
                 <div class="text-below">
-                  <span style="font-size: 21px;" class="font-bold cream">Caterpiller</span>
-                  <span style="font-size: 21px;" class="font-bold cream">Snake</span>
-                  <span style="font-size: 21px;" class="font-bold cream">Human</span>
+                  <span style="font-size: 21px;" class="font-bold ">Caterpiller</span>
+                  <span style="font-size: 21px;" class="font-bold ">Snake</span>
+                  <span style="font-size: 21px;" class="font-bold ">Human</span>
                 </div>
               </div>
         
@@ -131,6 +160,7 @@
           <h2 class="cream font-kalam font-bold move-right">Language Preferences<br></h2>
           <div class="box-container cream1">
             <div class="user-box text-size green">
+              <ion-icon name="lock-closed-outline"></ion-icon>
             English
             </div>
           </div>
