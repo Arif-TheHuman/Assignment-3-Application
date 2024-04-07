@@ -1,4 +1,4 @@
-<!-- Step 1: First of all you'd want to go into inspect element and choose iphone 14 
+Step 1: First of all you'd want to go into inspect element and choose iphone 14 
 
 For All
 Steps:
@@ -7,11 +7,11 @@ Steps:
 3. You can click on the top left to open the menu to see a side menu that have a link to all different pages that is available
 When you first enter the App you will be in the 
 
-Alert and Notifications page 
+*Alert and Notifications page*
 Steps:
 1. You can scroll up and down to see all of the alert and notifications you have receive
 
-Settings Page
+*Settings Page*
 Steps:
 1. You can scroll up and down to see all of the features you can set to your preferences
 2. You can set the sensitivity level by dragging the gray circle to your prefered sensitivity levels
@@ -23,17 +23,17 @@ Steps:
 7. There is a switch user which you can have multiple users and switch to what you want
 8. Finally you have the language preferences which for now we will be locking it but in the future, It'll be updated to be able to handle certain languages.
 
-Profile page
+*Profile page*
 Steps:
 1. You can click on the eye in the card next to password, Clicking this will reveal the password of your account.
 2. Then lets go to the next page, we click on the menu button top left. Lets go to Alert's History
 
-Alert's History Page
+*Alert's History Page*
 Steps:
 1. Once again you can scroll up and down, You'll be able to see all of the history of all the alert's your account has receive.
 2. Next up, click on the menu button top left and lets fo to the Community page
 
-Community page
+*Community page*
 Steps:
 1. As normal you can scroll up and down to see the most recent community post by the community
 2. You can make your own post by clicking on the button "Post" top right.
@@ -44,12 +44,12 @@ Steps:
 7. Finally you can see your post being posted on the community page.
 8. Ok our last page here, lets click on the menu button top left and go click on the about us.
 
-About Us Page
+*About Us Page*
 Steps:
 1. You can scroll up and down to read and see all the information about us. 
 2. That's basically it we are basically finish there.
 
 
--->
+
 
 
