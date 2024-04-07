@@ -1,0 +1,105 @@
+<ion-content>
+
+  <!-- Existing content here -->
+
+  <ion-app>
+    <!-- This one is for the menu inside after clicking on the menu button -->
+    <ion-menu  contentId="main-content"> <!-- this shows the physical look of the menu button -->
+      <ion-header color="tertiary" >
+        <ion-toolbar color="tertiary">
+          <ion-title style="font-size: 40px;">Menu Content</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="tertiary" style="font-size: 25px;" class="ion-padding" >
+        <br>
+        <hr>
+        <span><ion-icon name="notifications-outline">  </ion-icon>
+        <a class="darkgreenText" href="tabs/tab1">  Alert and Notifications</a>
+      </span>
+      <hr>
+      <span>
+      <ion-icon name="settings-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/tab2">  Settings</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="person-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/tab3">  Profile</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="clipboard-outline"></ion-icon>        
+        <a class="darkgreenText" href="tabs/alert-history">  Alert History</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="people-outline"></ion-icon>        
+        <a class="darkgreenText" href="tabs/community">  Community</a>
+      </span>
+      <hr>
+      <span>
+        <ion-icon name="information-circle-outline">  </ion-icon>      
+        <a class="darkgreenText" href="tabs/aboutus">  About Us</a>
+      </span>
+      <hr>
+    </ion-content>
+    </ion-menu>
+    
+    
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar color="tertiary">
+          <ion-buttons class="large-menu-button" slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title  style="font-size: 2em" class=" text-3xl font-bold align-center font-kalam">Community</ion-title>
+          <ion-buttons slot="end">
+            <a [routerLink]="['/tabs/tab3']">
+              <ion-avatar class="toppic">
+                <img src="../../assets/images/syamimi gambar faris.jpg">
+              </ion-avatar>
+            </a>
+          </ion-buttons>
+        </ion-toolbar>
+        <hr>
+
+        <ion-content class="my-background1" [fullscreen]="true">
+
+          <!-- monkey card -->
+        <ion-card color="tertiary" style="border-radius: 10%;" class="cream-border1">
+          <ion-card-header>
+            <p style="font-size: 35px;" class="cream align-center font-bold font-italic ">Animals have been
+            detected in your area
+            </p>
+          </ion-card-header>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <p style="text-align: left; font-size: 25px;" class="cream margleft1 font-bold">07:42am</p>
+                <p style="text-align: left; font-size: 25px;" class="cream margleft1 font-bold">01/04/2024</p>
+                <p style="text-align: left; font-size: 25px;" class="cream margleft1 font-bold">Sensor 1</p>
+              </ion-col>
+              <ion-col>
+                <img style="border-radius: 10%;" class="Alertimg margintop margleft cream-border2" src="../../assets/images/monkey.jpeg">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+<br>
+<br>
+
+          <br>
+          <br>
+          <br>
+
+        
+
+            
+
+
+</ion-content>
+      </ion-header>
+     
+    </div>
+  </ion-app>
+</ion-content>
