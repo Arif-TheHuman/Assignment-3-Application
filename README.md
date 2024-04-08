@@ -4,21 +4,20 @@ Table of Contents:
 - Steps to making the application
 - Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
 
-From downloading file to phone:
+*From downloading file to phone:*
 1. Download the whole files here then put it on the android studio
 2. Then go to command prompt and go to the files path and which is 3pages
 3. Type ionic capacitor copy android and then ionic capacitor run android
 
 
-
-From phone on what to do for usb bugging
+*From phone on what to do for usb bugging*
 1. Make sure to turn on developer options
 2. Turn on USB Debugging
 3. Turn on Install via USB
 4. Then you can just plug in your usb
 <br>
 
-Steps to making the application
+*Steps to making the application*
 1. Download android studio
 2. Download Java SDK jdk-17
 3. Make sure sdk is as what is wanted or required.
@@ -47,13 +46,13 @@ Steps to making the application
  type in command prompt<br>
 <br>8. ionic capacitor copy android
 <br>9. ionic capacitor run android
-<br>Then that should be it.
+<br> You should then be able to go to android studio, go on the menu button top left and go to build and build Bundle(s) / APK(s)
 <br>
 <br>
 
-Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
+*Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311*
 
-For All
+*For All*
 Steps:
 1. You can then choose either to click the navigations below to go to either Alert and notifications, Settings and Profile
 2. You can click on the image profile on the top right to go to the profile page
