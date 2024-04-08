@@ -1,3 +1,52 @@
+From phone on what to do for usb bugging
+1. Make sure to turn on developer options
+2. Turn on USB Debugging
+3. Turn on Install via USB
+4. Then you can just plug in your usb
+
+
+Steps to making the application
+1. Download android studio
+2. Download Java SDK jdk-17
+3. Make sure sdk is as what is wanted or required.
+4. Then after finish downloading Android studio and Java SDK, Go to Environment Variables. and input as what is the path to your downloaded file for e.g
+   On the top of environment variables  User Variables
+ANDROID_SDK_ROOT      C:\Users\ASUS\AppData\Local\Android\Sdk
+JAVA_HOME             C:\Program Files\Java\jdk-17
+
+On the bottom of Environment Variables System variables
+_JAVA_OPTIONS         -Xmx512M
+JAVA_HOME             C:\Program Files\Java\jdk-17
+
+Type in command prompt of the wanted file
+5. ng build 
+6. ionic capacitor add android
+7. Go and open your visual studio code and make a new file called capacitor.config.json and enter this. But make sure the app id and appName is as to what you wanted it to be called
+{
+    "appId": "com.AlertDetectorApp",
+    "appName": "AlertDetectorApp",
+    "bundleWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "www",
+    "cordova": {}
+}
+ type in command prompt
+8. ionic capacitor copy android
+9. ionic capacitor run android
+Then that should be it.
+
+
+
+
+
+
+
+
+
+
+
+
+
 Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
 
 For All
