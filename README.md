@@ -3,7 +3,7 @@ From phone on what to do for usb bugging
 2. Turn on USB Debugging
 3. Turn on Install via USB
 4. Then you can just plug in your usb
-
+<br>
 
 Steps to making the application
 1. Download android studio
