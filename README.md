@@ -41,7 +41,7 @@ Steps:
 4. Here you can insert your image and comments for your post.
 5. For example, lets click on the "Example" button below the card. This will bring you to another community post page.
 6. Here is the post you have created and After confirming everything you can then click on the "Send" button.
-7. Finally you can see your post being posted on the community page.
+7. Finally you can see your post being posted on the community page ofcourse at the top as it is the most recent post.
 8. Ok our last page here, lets click on the menu button top left and go click on the about us.
 
 *About Us Page*
