@@ -1,4 +1,4 @@
-Step 1: First of all you'd want to go into inspect element and choose iphone 14 
+Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
 
 For All
 Steps:
