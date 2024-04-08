@@ -1,58 +1,62 @@
-Table of Contents:
+# Table of Contents:
 - From downloading file to phone:
 - From phone on what to do for usb bugging
 - Steps to making the application
 - Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
 
-*From downloading file to phone:*
-1. Download the whole files here then put it on the android studio
-2. Then go to command prompt and go to the files path and which is 3pages
-3. Type ionic capacitor copy android and then ionic capacitor run android
+# From downloading file to phone:
+01. Download the whole files here then put it on the android studio
+02. Then go to command prompt and go to the files path and which is 3pages
+03. Type 
+    - ionic capacitor copy android and then 
+    - ionic capacitor run android
 
 
-*From phone on what to do for usb bugging*
-1. Make sure to turn on developer options
-2. Turn on USB Debugging
-3. Turn on Install via USB
-4. Then you can just plug in your usb
+# From phone on what to do for usb bugging 
+01. Make sure to turn on developer options
+02. Turn on USB Debugging
+03. Turn on Install via USB
+04. Then you can just plug in your usb
 <br>
 
-*Steps to making the application*
-1. Download android studio
-2. Download Java SDK jdk-17
-3. Make sure sdk is as what is wanted or required.
-4. Then after finish downloading Android studio and Java SDK, Go to Environment Variables. and input as what is the path to your downloaded file for e.g<br>
-<br>On the top of environment variables  User Variables
-<br>ANDROID_SDK_ROOT      C:\Users\ASUS\AppData\Local\Android\Sdk
-<br>JAVA_HOME             C:\Program Files\Java\jdk-17
-<br>
-<br>On the bottom of Environment Variables System variables
-<br>_JAVA_OPTIONS         -Xmx512M
-<br>JAVA_HOME             C:\Program Files\Java\jdk-17
+# Steps to making the application
+01. Download android studio
+02. Download Java SDK jdk-17
+03. Make sure sdk is as what is wanted or required.
+04. Then after finish downloading Android studio and Java SDK, <br> Go to Environment Variables. and input as what is the path to your downloaded file for e.g
 
-<br>Type in command prompt of the wanted file<br>
-<br>5. ng build 
-<br>6. ionic capacitor add android
-<br>7. Go and open your visual studio code and make a new file called capacitor.config.json and enter this. But make sure the app id and appName is as to what you wanted it to be called
-<br>{
+    - On the top of environment variables  User Variables
+    - ANDROID_SDK_ROOT      C:\Users\ASUS\AppData\Local\Android\Sdk
+    - JAVA_HOME             C:\Program Files\Java\jdk-17
+
+    - On the bottom of Environment Variables System variables
+    - _JAVA_OPTIONS         -Xmx512M
+    - JAVA_HOME             C:\Program Files\Java\jdk-17<br>
+    
+Type in command prompt of the wanted file<br>
+05. ng build 
+06. ionic capacitor add android
+07. Go and open your visual studio code and make a new file called capacitor.config.json and enter this. But make sure the app id and appName is as to what you wanted it to be called
+
+- {
     <br>"appId": "com.AlertDetectorApp",
     <br>"appName": "AlertDetectorApp",
     <br>"bundleWebRuntime": false,
     <br>"npmClient": "npm",
     <br>"webDir": "www",
     <br>"cordova": {}<br>
-}<br>
+}
 
- type in command prompt<br>
+<br>  type in command prompt<br>
 <br>8. ionic capacitor copy android
 <br>9. ionic capacitor run android
 <br> You should then be able to go to android studio, go on the menu button top left and go to build and build Bundle(s) / APK(s)
 <br>
 <br>
 
-*Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311*
+# Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311*
 
-*For All*
+**For All**
 Steps:
 1. You can then choose either to click the navigations below to go to either Alert and notifications, Settings and Profile
 2. You can click on the image profile on the top right to go to the profile page
@@ -63,7 +67,7 @@ When you first enter the App you will be in the
 Steps:
 1. You can scroll up and down to see all of the alert and notifications you have receive
 
-*Settings Page*
+**Settings Page**
 Steps:
 1. You can scroll up and down to see all of the features you can set to your preferences
 2. You can set the sensitivity level by dragging the gray circle to your prefered sensitivity levels
@@ -75,17 +79,17 @@ Steps:
 7. There is a switch user which you can have multiple users and switch to what you want
 8. Finally you have the language preferences which for now we will be locking it but in the future, It'll be updated to be able to handle certain languages.
 
-*Profile page*
+**Profile page**
 Steps:
 1. You can click on the eye in the card next to password, Clicking this will reveal the password of your account.
 2. Then lets go to the next page, we click on the menu button top left. Lets go to Alert's History
 
-*Alert's History Page*
+**Alert's History Page**
 Steps:
 1. Once again you can scroll up and down, You'll be able to see all of the history of all the alert's your account has receive.
 2. Next up, click on the menu button top left and lets fo to the Community page
 
-*Community page*
+**Community page**
 Steps:
 1. As normal you can scroll up and down to see the most recent community post by the community
 2. You can make your own post by clicking on the button "Post" top right.
@@ -96,7 +100,7 @@ Steps:
 7. Finally you can see your post being posted on the community page ofcourse at the top as it is the most recent post.
 8. Ok our last page here, lets click on the menu button top left and go click on the about us.
 
-*About Us Page*
+**About Us Page**
 Steps:
 1. You can scroll up and down to read and see all the information about us. 
 2. That's basically it we are basically finish there.
