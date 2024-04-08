@@ -47,6 +47,7 @@ const routes: Routes = [
         path: 'community-update',
         loadChildren: () => import('../community-update/community-update.module').then(m => m.CommunityUpdatePageModule)
       },
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
