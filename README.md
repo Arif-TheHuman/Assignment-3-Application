@@ -1,3 +1,16 @@
+Table of Contents:
+- From downloading file to phone:
+- From phone on what to do for usb bugging
+- Steps to making the application
+- Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
+
+From downloading file to phone:
+1. Download the whole files here then put it on the android studio
+2. Then go to command prompt and go to the files path and which is 3pages
+3. Type ionic capacitor copy android and then ionic capacitor run android
+
+
+
 From phone on what to do for usb bugging
 1. Make sure to turn on developer options
 2. Turn on USB Debugging
@@ -9,43 +22,34 @@ Steps to making the application
 1. Download android studio
 2. Download Java SDK jdk-17
 3. Make sure sdk is as what is wanted or required.
-4. Then after finish downloading Android studio and Java SDK, Go to Environment Variables. and input as what is the path to your downloaded file for e.g
-   <br>On the top of environment variables  User Variables
+4. Then after finish downloading Android studio and Java SDK, Go to Environment Variables. and input as what is the path to your downloaded file for e.g<br>
+<br>On the top of environment variables  User Variables
 <br>ANDROID_SDK_ROOT      C:\Users\ASUS\AppData\Local\Android\Sdk
 <br>JAVA_HOME             C:\Program Files\Java\jdk-17
-
+<br>
 <br>On the bottom of Environment Variables System variables
 <br>_JAVA_OPTIONS         -Xmx512M
 <br>JAVA_HOME             C:\Program Files\Java\jdk-17
 
-<br>Type in command prompt of the wanted file
-5. ng build 
-6. ionic capacitor add android
-7. Go and open your visual studio code and make a new file called capacitor.config.json and enter this. But make sure the app id and appName is as to what you wanted it to be called
+<br>Type in command prompt of the wanted file<br>
+<br>5. ng build 
+<br>6. ionic capacitor add android
+<br>7. Go and open your visual studio code and make a new file called capacitor.config.json and enter this. But make sure the app id and appName is as to what you wanted it to be called
 <br>{
-    "appId": "com.AlertDetectorApp",
-    "appName": "AlertDetectorApp",
-    "bundleWebRuntime": false,
-    "npmClient": "npm",
-    "webDir": "www",
-    "cordova": {}
+    <br>"appId": "com.AlertDetectorApp",
+    <br>"appName": "AlertDetectorApp",
+    <br>"bundleWebRuntime": false,
+    <br>"npmClient": "npm",
+    <br>"webDir": "www",
+    <br>"cordova": {}<br>
 }<br>
- type in command prompt
-8. ionic capacitor copy android
-9. ionic capacitor run android
-Then that should be it.
 
-
-
-
-
-
-
-
-
-
-
-
+ type in command prompt<br>
+<br>8. ionic capacitor copy android
+<br>9. ionic capacitor run android
+<br>Then that should be it.
+<br>
+<br>
 
 Step 1: First of all you'd want to go into inspect element and choose iphone 14 or for better go for responsive and have it 643 x 1311
 
