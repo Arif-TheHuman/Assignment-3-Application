@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+
 // import { Ionicons } from '@ionic/vue';
 import { arrowForward } from 'ionicons/icons';
 
@@ -21,13 +21,12 @@ export default {
 }
 
 @NgModule({
-  imports: [
+    imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
-    Tab1PageRoutingModule
-  ],
-  declarations: [Tab1Page]
+    Tab1PageRoutingModule,
+    Tab1Page
+]
 })
 export class Tab1PageModule {}

@@ -6,12 +6,12 @@ import { CommunityUpdatePageRoutingModule } from './community-update-routing.mod
 import { CommunityUpdatePage } from './community-update.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CommunityUpdatePageRoutingModule
-  ],
-  declarations: [CommunityUpdatePage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CommunityUpdatePageRoutingModule,
+        CommunityUpdatePage
+    ]
 })
 export class CommunityUpdatePageModule {}

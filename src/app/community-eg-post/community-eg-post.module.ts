@@ -6,13 +6,13 @@ import { CommunityEgPostPageRoutingModule } from './community-eg-post-routing.mo
 import { CommunityEgPostPage } from './community-eg-post.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    CommunityEgPostPageRoutingModule
-  ],
-  declarations: [CommunityEgPostPage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        CommunityEgPostPageRoutingModule,
+        CommunityEgPostPage
+    ]
 })
 export class CommunityEgPostPageModule {}
 
